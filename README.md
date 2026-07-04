@@ -79,19 +79,10 @@ Prompt pack:
 - Copy notes:
 ```
 
-## Validation
-
-This repository includes a GitHub Actions workflow that checks:
-
-- required skill files exist
-- `SKILL.md` contains frontmatter with `name` and `description`
-- `agents/openai.yaml` exists for each skill folder
-- skill files do not contain replacement characters
-
 ## Encoding Note
 
 This repository includes text files that should be handled carefully to avoid mojibake. Keep the original encoding of existing files unless you intentionally perform a verified encoding migration.
 
 ## License
 
-No `LICENSE` file is included yet. Add one before distributing the repository for broad reuse.
+This repository is released under the MIT License. See `LICENSE` for details.
