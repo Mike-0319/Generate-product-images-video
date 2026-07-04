@@ -2,26 +2,26 @@
 
 English | [中文](README.zh-CN.md)
 
-This repository contains a reusable Codex skill collection.
+A small collection of reusable Codex skills for e-commerce product visuals.
 
 ## Skills
 
-- `product-shots-prompt-briefs`: Turn e-commerce image requests into structured prompt briefs and reusable prompt packs
+| Skill | Description |
+| --- | --- |
+| `product-shots-prompt-briefs` | Turn e-commerce image requests into structured prompt briefs and reusable prompt packs |
 
-The skill turns e-commerce image requests into structured prompt briefs and reusable prompt packs. It is prompt-only by design and does not call any image generation API.
+## Overview
 
-## What This Skill Does
+`product-shots-prompt-briefs` is a prompt-only skill. It does not render images or call any image generation API. Instead, it converts a product image request into a compact brief plus reusable prompts that can be pasted into another image workflow.
 
-- Converts product image requests into a compact brief
-- Produces a reusable `master_prompt` and `negative_prompt`
-- Supports Amazon main images, secondary image sets, A+ detail modules, ad creatives, social posts, and prompt-pack-only requests
-- Keeps product fidelity instructions separate from text overlay guidance
+It supports:
 
-## What This Skill Does Not Do
-
-- It does not render images
-- It does not upload assets
-- It does not call OpenAI, Midjourney, or any other image API
+- Amazon main images
+- Amazon secondary image sets
+- Amazon A+ detail modules
+- Ad creatives
+- Social posts
+- Prompt-pack-only requests
 
 ## Repository Layout
 
@@ -37,19 +37,17 @@ skills/
       amazon-prompt-recipes.md
 ```
 
-## Install
+## Installation
 
-If you use the Codex skill installer helper, install this skill from GitHub with:
+Install the available skill from GitHub:
 
 ```bash
 scripts/install-skill-from-github.py --repo Mike-0319/Generate-Amazon-product-images --path skills/product-shots-prompt-briefs
 ```
 
-After installation, restart Codex so the new skill is discovered.
+After installation, restart Codex so the skill can be discovered.
 
-## Usage
-
-Example requests:
+## Example Requests
 
 ```text
 Use $product-shots-prompt-briefs to turn this Amazon main image request into a reusable prompt pack.
@@ -64,8 +62,6 @@ Use $product-shots-prompt-briefs to create a social post prompt pack for a lifes
 ```
 
 ## Output Shape
-
-The skill is designed to return a structure like this:
 
 ```text
 Brief summary:
@@ -83,10 +79,6 @@ Prompt pack:
 - Reference image required:
 - Copy notes:
 ```
-
-## Encoding Note
-
-This repository includes text files that should be handled carefully to avoid mojibake. Keep the original encoding of existing files unless you intentionally perform a verified encoding migration.
 
 ## License
 
