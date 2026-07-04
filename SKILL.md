@@ -1,6 +1,6 @@
 ---
 name: product-shots-prompt-briefs
-description: Build prompt-only briefs for product visuals by distilling the product-shots ecosystem into reusable image-generation prompts. Use when Codex should turn a product request, product photo, or e-commerce visual task into structured prompts without calling any image API. Covers Amazon main images, Amazon A+ detail modules, secondary-image plans, platform and industry prompt patches, negative constraints, and prompt packs that can be pasted into another image tool or workflow.
+description: 将 product-shots 体系整理为可复用的商品视觉提示词 brief 与生图 prompt。适用于 Codex 需要在不调用任何生图 API 的前提下，把商品需求、商品图片或电商视觉任务转换为结构化提示词的场景，覆盖 Amazon 主图、Amazon A+ 详情模块、副图规划、平台与行业提示词补丁、负面约束，以及可直接粘贴到其他图像工具或工作流中的 prompt 包。
 ---
 
 # Product Shots Prompt Briefs
