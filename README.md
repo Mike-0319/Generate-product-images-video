@@ -1,8 +1,12 @@
 # Generate Amazon Product Images
 
-This repository contains a reusable Codex skill:
+English | [中文](README.zh-CN.md)
 
-- `product-shots-prompt-briefs`
+This repository contains a reusable Codex skill collection.
+
+## Skills
+
+- `product-shots-prompt-briefs`: Turn e-commerce image requests into structured prompt briefs and reusable prompt packs
 
 The skill turns e-commerce image requests into structured prompt briefs and reusable prompt packs. It is prompt-only by design and does not call any image generation API.
 
@@ -22,14 +26,15 @@ The skill turns e-commerce image requests into structured prompt briefs and reus
 ## Repository Layout
 
 ```text
-product-shots-prompt-briefs/
-  SKILL.md
-  agents/
-    openai.yaml
-  references/
-    core-brief-template.md
-    prompt-patches.md
-    amazon-prompt-recipes.md
+skills/
+  product-shots-prompt-briefs/
+    SKILL.md
+    agents/
+      openai.yaml
+    references/
+      core-brief-template.md
+      prompt-patches.md
+      amazon-prompt-recipes.md
 ```
 
 ## Install
@@ -37,7 +42,7 @@ product-shots-prompt-briefs/
 If you use the Codex skill installer helper, install this skill from GitHub with:
 
 ```bash
-scripts/install-skill-from-github.py --repo Mike-0319/Generate-Amazon-product-images --path product-shots-prompt-briefs
+scripts/install-skill-from-github.py --repo Mike-0319/Generate-Amazon-product-images --path skills/product-shots-prompt-briefs
 ```
 
 After installation, restart Codex so the new skill is discovered.
