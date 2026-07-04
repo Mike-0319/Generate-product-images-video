@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Shots Prompt Briefs"
+  short_description: "Turn product image requests into reusable prompt briefs."
+  default_prompt: "Use $product-shots-prompt-briefs to turn this product image request into reusable image prompts."
