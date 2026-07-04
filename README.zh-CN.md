@@ -1,18 +1,18 @@
-# Generate Amazon Product Images
+# Generate Product Images Video
 
 [English](README.md) | 中文
 
-这是一个面向电商商品视觉场景的 Codex skill 小合集。
+这是一个可复用的 Codex skill，用来把电商商品图需求转换成结构化 brief 和可复用提示词包。
 
-## Skills
+## Skill
 
 | Skill | 说明 |
 | --- | --- |
-| `product-shots-prompt-briefs` | 把电商商品图需求整理成结构化 brief 和可复用提示词包 |
+| `product-shots-prompt-briefs` | 把商品视觉需求转换成只产出提示词的 brief，适用于 Amazon 商品图、A+ 模块、广告图和社媒图 |
 
 ## 概览
 
-`product-shots-prompt-briefs` 是一个只产出提示词的 skill。它不直接生成图片，也不调用任何生图 API，而是把商品图需求转换成简洁的 brief 和可复用 prompt，方便粘贴到别的图像工作流里继续使用。
+`product-shots-prompt-briefs` 是一个只产出提示词的 skill。它不直接生成图片，也不调用任何生图 API，而是把商品需求整理成简洁 brief 和可复用 prompt，方便粘贴到别的图像工作流里继续使用。
 
 目前支持：
 
@@ -26,26 +26,27 @@
 ## 仓库结构
 
 ```text
-skills/
-  product-shots-prompt-briefs/
-    SKILL.md
-    agents/
-      openai.yaml
-    references/
-      core-brief-template.md
-      prompt-patches.md
-      amazon-prompt-recipes.md
+SKILL.md
+agents/
+  openai.yaml
+references/
+  core-brief-template.md
+  prompt-patches.md
+  amazon-prompt-recipes.md
+README.md
+README.zh-CN.md
+LICENSE
 ```
 
 ## 安装
 
-从 GitHub 安装当前可用 skill：
+这个仓库已经调整为“根目录单 skill”结构，方便 CC Switch 这类工具更稳定地识别。
 
-```bash
-scripts/install-skill-from-github.py --repo Mike-0319/Generate-Amazon-product-images --path skills/product-shots-prompt-briefs
+如果你使用支持“仓库根目录 skill”的 GitHub 安装方式，可以直接从这里安装：
+
+```text
+https://github.com/Mike-0319/Generate-product-images-video
 ```
-
-安装后重启 Codex，让 skill 被正确发现。
 
 ## 示例请求
 

@@ -1,18 +1,18 @@
-# Generate Amazon Product Images
+# Generate Product Images Video
 
 English | [中文](README.zh-CN.md)
 
-A small collection of reusable Codex skills for e-commerce product visuals.
+A reusable Codex skill for turning e-commerce product image requests into structured prompt briefs and reusable prompt packs.
 
-## Skills
+## Skill
 
 | Skill | Description |
 | --- | --- |
-| `product-shots-prompt-briefs` | Turn e-commerce image requests into structured prompt briefs and reusable prompt packs |
+| `product-shots-prompt-briefs` | Convert product visual requests into prompt-only briefs for Amazon images, A+ modules, ads, and social posts |
 
 ## Overview
 
-`product-shots-prompt-briefs` is a prompt-only skill. It does not render images or call any image generation API. Instead, it converts a product image request into a compact brief plus reusable prompts that can be pasted into another image workflow.
+`product-shots-prompt-briefs` is a prompt-only skill. It does not render images or call any image generation API. Instead, it converts a product request into a compact brief plus reusable prompts that can be pasted into another image workflow.
 
 It supports:
 
@@ -26,26 +26,27 @@ It supports:
 ## Repository Layout
 
 ```text
-skills/
-  product-shots-prompt-briefs/
-    SKILL.md
-    agents/
-      openai.yaml
-    references/
-      core-brief-template.md
-      prompt-patches.md
-      amazon-prompt-recipes.md
+SKILL.md
+agents/
+  openai.yaml
+references/
+  core-brief-template.md
+  prompt-patches.md
+  amazon-prompt-recipes.md
+README.md
+README.zh-CN.md
+LICENSE
 ```
 
 ## Installation
 
-Install the available skill from GitHub:
+This repository is structured as a root-level single-skill repository so tools such as CC Switch can discover it more reliably.
 
-```bash
-scripts/install-skill-from-github.py --repo Mike-0319/Generate-Amazon-product-images --path skills/product-shots-prompt-briefs
+If you use a GitHub skill installer that supports repository-root skills, install from:
+
+```text
+https://github.com/Mike-0319/Generate-product-images-video
 ```
-
-After installation, restart Codex so the skill can be discovered.
 
 ## Example Requests
 
